@@ -1,0 +1,83 @@
+{
+  "Aspects": {
+    "Mundane": " ",
+    "Infused": " ",
+    "Attuned": " "
+  },
+  "Attributes": {
+    "Agility": " ",
+    "Awareness": " ",
+    "Charisma": " ",
+    "Intellect": " ",
+    "Resilience": " ",
+    "Strength": " ",
+    "Vitality": " ",
+    "Wits": " "
+  },
+  "Attunement": {
+    "Death": "",
+    "Energy": "",
+    "Ether": "",
+    "Life": "",
+    "Matter": "",
+    "Void": ""
+  },
+  "Bearings": {
+    "Architect": "With a strong sense of purpose and the need for structure, those that don this bearing are often seen as controlling. Most popular with Academics.",
+    "Caregiver": "Embracing this bearing means understanding society, and other people. Not always benign, they are often called infectious. Most popular with Emissaries.",
+    "Champion": "Pledging themselves to do what must be done, those following this bearing understand the need to harm in order to protect or survive. Most popular with Soldiers.",
+    "Rebel": "Seeing opportunity at every turn and rules as guidelines, those that align with this bearing dance to their own tune. Most popular with Specialists."
+  },
+  "Personae": {
+    "Mercurial": "Easygoing, mercurial, and flexible, characters with this Persona are often found where they should not be. They are associated with Agility.",
+    "Explorer": "Observant, perceptive, but not necessarily connected to the world around them, these characters are a curious lot.  They are associated to Awareness.",
+    "Hedonist": "Passionate, vivid, and seeking attention, characters with this Persona burn bright but often for a brief period.  They are associated with Charisma.",
+    "Leader": "Focused, sharp, and precise, but often rigid and unyielding, those with this Persona are creatures of logic and reason.  They are associated with Intellect.",
+    "Creator": "Imaginative, with the fortitude necessary to see their visions to fruition, those with this persona rarely give up.  They are associated with Resilience.",
+    "Hero": "Ready to answer a cry for help, characters with this Persona often face insurmountable odds. They are associated with Strength.",
+    "Pragmatist": "Stalwart, practical, slow to anger, and slow to forget, this Persona is for those willing to do whatever it takes to survive. They are associated with Vitality.",
+    "Schemer": "Secretive, deceptive, and calculating, these characters see the big picture, often pulling the strings behind the scenes. They are associated with Wits."
+  },
+  "Skills": {
+    "Generic": {
+      "Animals": " ",
+      "Artistry": " ",
+      "Driving": " ",
+      "Inspection": " ",
+      "Medicine": " "
+    },
+    "Socialite": {
+      "Deception": " ",
+      "Empathy": " ",
+      "Intimidation": " ",
+      "Performance": " ",
+      "Persuasion": " "
+    },
+    "Soldier": {
+      "Firearms": " ",
+      "Melee": " ",
+      "Ranged": " ",
+      "Tactics": " ",
+      "Unarmed": " "
+    },
+    "Specialist": {
+      "Athletics": " ",
+      "Forgery": " ",
+      "Larceny": " ",
+      "Stealth": " ",
+      "Survival": " "
+    },
+    "Scholar": {
+      "Academics": " ",
+      "Banter": " ",
+      "Common Lore": " ",
+      "Etiquette": " ",
+      "Occultism": " ",
+      "Politics": " ",
+      "Religion": " ",
+      "Science": " ",
+      "Technology": " ",
+      "Unique": "A field of knowledge unique to the character."
+    }
+  }
+}

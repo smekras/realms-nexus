@@ -1,0 +1,265 @@
+{
+  "General": {
+    "Player": "Player Handle",
+    "Name": "Character Name",
+    "Concept": "Character Concept",
+    "Genus": [
+      -1,
+      -1
+    ],
+    "Species": [
+      -1,
+      -1
+    ],
+    "Aspect": [
+      -1,
+      -1
+    ],
+    "Persona": [
+      -1,
+      -1
+    ],
+    "Bearing": [
+      -1,
+      -1
+    ]
+  },
+  "Attributes": {
+    "Agility": [
+      0,
+      0
+    ],
+    "Awareness": [
+      0,
+      0
+    ],
+    "Charisma": [
+      0,
+      0
+    ],
+    "Intellect": [
+      0,
+      0
+    ],
+    "Resilience": [
+      0,
+      0
+    ],
+    "Strength": [
+      0,
+      0
+    ],
+    "Vitality": [
+      0,
+      0
+    ],
+    "Wits": [
+      0,
+      0
+    ]
+  },
+  "Secondary": {
+    "Health": {
+      "Body": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Will": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "Defense": [
+      0,
+      0
+    ],
+    "Mass": [
+      0,
+      0
+    ],
+    "Initiative": [
+      0,
+      0
+    ],
+    "Actions": [
+      0,
+      0
+    ],
+    "Points": {
+      "Build": [
+        0,
+        0
+      ],
+      "Experience": [
+        0,
+        0
+      ]
+    },
+    "Movement": {
+      "Walking": [
+        0,
+        0
+      ],
+      "Running": [
+        0,
+        0
+      ],
+      "Swimming": [
+        0,
+        0
+      ],
+      "Jumping": [
+        0,
+        0
+      ]
+    }
+  },
+  "Skills": {
+    "Generic": {
+      "Animals": [
+        0,
+        []
+      ],
+      "Artistry": [
+        0,
+        []
+      ],
+      "Driving": [
+        0,
+        []
+      ],
+      "Inspection": [
+        0,
+        []
+      ],
+      "Medicine": [
+        0,
+        []
+      ]
+    },
+    "Emissary": {
+      "Deception": [
+        0,
+        []
+      ],
+      "Empathy": [
+        0,
+        []
+      ],
+      "Intimidation": [
+        0,
+        []
+      ],
+      "Performance": [
+        0,
+        []
+      ],
+      "Persuasion": [
+        0,
+        []
+      ]
+    },
+    "Soldier": {
+      "Firearms": [
+        0,
+        []
+      ],
+      "Melee": [
+        0,
+        []
+      ],
+      "Ranged": [
+        0,
+        []
+      ],
+      "Tactics": [
+        0,
+        []
+      ],
+      "Unarmed": [
+        0,
+        []
+      ]
+    },
+    "Specialist": {
+      "Athletics": [
+        0,
+        []
+      ],
+      "Forgery": [
+        0,
+        []
+      ],
+      "Larceny": [
+        0,
+        []
+      ],
+      "Stealth": [
+        0,
+        []
+      ],
+      "Survival": [
+        0,
+        []
+      ]
+    }
+  },
+  "Knowledge": {
+    "Fields": {
+      "Academics": [
+        0,
+        []
+      ],
+      "Banter": [
+        0,
+        []
+      ],
+      "Common Lore": [
+        0,
+        []
+      ],
+      "Etiquette": [
+        0,
+        []
+      ],
+      "Occultism": [
+        0,
+        []
+      ],
+      "Politics": [
+        0,
+        []
+      ],
+      "Religion": [
+        0,
+        []
+      ],
+      "Science": [
+        0,
+        []
+      ],
+      "Technology": [
+        0,
+        []
+      ],
+      "Unique": [
+        0,
+        []
+      ]
+    },
+    "Languages": [
+      "Native Tongue"
+    ]
+  },
+  "Personality": {
+    "Quirk": " "
+  },
+  "Qualities": {},
+  "Fighting Styles": {},
+  "Maneuvers": {},
+  "Weaknesses": {}
+}

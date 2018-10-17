@@ -1,0 +1,586 @@
+{
+  "Species": {
+    "Avatar": {
+      "Aran": {
+        "kingdom": "Primordial",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Aranen",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Gondiel": {
+        "kingdom": "Primordial",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Gondiel",
+        "subspecies": [
+          "Charon",
+          "Reaper",
+          "Valkyrie"
+        ],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Henlach": {
+        "kingdom": "Primordial",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Henlach",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Lindaith": {
+        "kingdom": "Primordial",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Lindaith",
+        "subspecies": [
+          "Cherub",
+          "Erel",
+          "Hashmal",
+          "Seraph"
+        ],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Tawar": {
+        "kingdom": "Primordial",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Tawaren",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      }
+    },
+    "Elemental": {
+      "Djinni": {
+        "kingdom": "Primordial",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Djinn",
+        "subspecies": [
+          "Aerial",
+          "Faerie",
+          "Marid"
+        ],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Dryad": {
+        "kingdom": "Primordial",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Dryads",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Efreeti": {
+        "kingdom": "Primordial",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Efreet",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Shikintar": {
+        "kingdom": "Primordial",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Shikintars",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Undine": {
+        "kingdom": "Primordial",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Undines",
+        "subspecies": [
+          "Merfolk",
+          "Nymph"
+        ],
+        "modifiers": [],
+        "qualities": []
+      }
+    },
+    "Chimera": {
+      "Avarath": {
+        "kingdom": "Primal",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Avarath",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Nathran": {
+        "kingdom": "Primal",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Nathran",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Ravan'lagh": {
+        "kingdom": "Primal",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Ravan'lagh",
+        "subspecies": [
+          "Cordyen",
+          "Narhloc",
+          "Ullondi"
+        ],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Shedu": {
+        "kingdom": "Primal",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Shedu",
+        "subspecies": [
+          "Lamassu",
+          "Manticore",
+          "Sphinx"
+        ],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Urakten": {
+        "kingdom": "Primal",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Urakten",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      }
+    },
+    "Cryptid": {
+      "Cyclops": {
+        "kingdom": "Primal",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Cyclopes",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Draugr": {
+        "kingdom": "Primal",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Draugar",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Fomor": {
+        "kingdom": "Primal",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Fomori",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Troll": {
+        "kingdom": "Primal",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Trolls",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Wendigo": {
+        "kingdom": "Primal",
+        "generation": "Firstborn",
+        "description": " ",
+        "plural": "Wendigo",
+        "subspecies": [
+          "Sasquatch",
+          "Yeti"
+        ],
+        "modifiers": [],
+        "qualities": []
+      }
+    },
+    "Protean": {
+      "Daegraw": {
+        "kingdom": "Primal",
+        "generation": "Secondborn",
+        "description": " ",
+        "plural": "Daegraw",
+        "subspecies": [
+          "Arktani",
+          "Basti",
+          "Gosodon",
+          "Lokeru",
+          "Lycaon"
+        ],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Faen'ra": {
+        "kingdom": "Primal",
+        "generation": "Secondborn",
+        "description": " ",
+        "plural": "Faen'ra",
+        "subspecies": [
+          "Duathrin",
+          "Te'griel"
+        ],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Naga": {
+        "kingdom": "Primal",
+        "generation": "Secondborn",
+        "description": " ",
+        "plural": "Naga",
+        "subspecies": [
+          "Gorgon",
+          "Lamia"
+        ],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Ryujin": {
+        "kingdom": "Primal",
+        "generation": "Secondborn",
+        "description": " ",
+        "plural": "Ryujini",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Selkie": {
+        "kingdom": "Primal",
+        "generation": "Secondborn",
+        "description": " ",
+        "plural": "Selkies",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      }
+    },
+    "Spectral": {
+      "Banshee": {
+        "kingdom": "Primordial",
+        "generation": "Secondborn",
+        "description": " ",
+        "plural": "Banshees",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Fury": {
+        "kingdom": "Primordial",
+        "generation": "Secondborn",
+        "description": " ",
+        "plural": "Furies",
+        "subspecies": [
+          "Centaur",
+          "Harpy",
+          "Minotaur",
+          "Satyr"
+        ],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Gargoyle": {
+        "kingdom": "Primordial",
+        "generation": "Secondborn",
+        "description": " ",
+        "plural": "Gargoyles",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Hvilfr": {
+        "kingdom": "Primordial",
+        "generation": "Secondborn",
+        "description": " ",
+        "plural": "Hvilfar",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Lilin": {
+        "kingdom": "Primordial",
+        "generation": "Secondborn",
+        "description": " ",
+        "plural": "Lilim",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      }
+    },
+    "Eldar": {
+      "Cuerryn": {
+        "kingdom": "Fae",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Cuerryn",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Naraned": {
+        "kingdom": "Fae",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Naraned",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Saeg'hul": {
+        "kingdom": "Fae",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Saeg'hul",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Tekalad": {
+        "kingdom": "Fae",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Tekalad",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Ysta'are": {
+        "kingdom": "Fae",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Ysta'are",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      }
+    },
+    "Hauflin": {
+      "Ghoul": {
+        "kingdom": "Fae",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Ghouls",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Goblin": {
+        "kingdom": "Fae",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Goblins",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Kobold": {
+        "kingdom": "Fae",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Kobolds",
+        "subspecies": [
+          "Boggart",
+          "Gremlin"
+        ],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Pooka": {
+        "kingdom": "Fae",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Pookas",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Tellem": {
+        "kingdom": "Fae",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Tellem",
+        "subspecies": [
+          "Gnome",
+          "Halfling"
+        ],
+        "modifiers": [],
+        "qualities": []
+      }
+    },
+    "Human": {
+      "Empyr": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Empyri",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Eruhim": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Eruhim",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Jotunar": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Jotunn",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Tellurian": {
+        "kingdom": "Hominid",
+        "generation": "Secondborn",
+        "description": " ",
+        "plural": "Tellurians",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Sapiens": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Sapiens",
+        "subspecies": [
+          "Ater",
+          "Bantor",
+          "Dacir",
+          "Kathai",
+          "Suebi",
+          "Zangir"
+        ],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Wampyr": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Wampyri",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      }
+    },
+    "Dwarf": {
+      "Fulkhaz": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Fulkhuz",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Gundkhaz": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Gundkhazim",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Kharkhaz": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Kharkhuz",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Sarkhaz": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Sarkhuz",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Zirakhaz": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Zirakhuz",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      }
+    },
+    "Orc": {
+      "Eqyrad": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Eqyrad",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Graghur": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Graghur",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Makara": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Makara",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Wundhur": {
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Wundhur",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      },
+      "Xendiath": {
+        "kingdom": "Hominid",
+        "generation": "Mithborn",
+        "description": " ",
+        "plural": "Xendiath",
+        "subspecies": [],
+        "modifiers": [],
+        "qualities": []
+      }
+    }
+  }
+}
