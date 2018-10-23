@@ -141,7 +141,7 @@
         []
       ]
     },
-    "Emissary": {
+    "Socialite": {
       "Deception": [
         0,
         []
@@ -209,7 +209,7 @@
     }
   },
   "Knowledge": {
-    "Fields": {
+    "Scholar": {
       "Academics": [
         0,
         []
@@ -261,5 +261,12 @@
   "Qualities": {},
   "Fighting Styles": {},
   "Maneuvers": {},
-  "Weaknesses": {}
+  "Weaknesses": {},
+  "Attunement": {
+    "Death": 0,
+    "Matter": 0,
+    "Ether": 0,
+    "Energy": 0,
+    "Life": 0
+  }
 }

@@ -1,6 +1,5 @@
 from logic import utils
 
-characters = utils.read_json_file('data/characters.json')
 lists = utils.read_json_file('data/lists.json')
 qualities = utils.read_json_file('data/qualities.json')
 races = utils.read_json_file('data/species.json')

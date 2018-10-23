@@ -1,30 +1,45 @@
+"""
+Author: Stergios Mekras
+Email: stergios.mekras@gmail.com
+"""
+
 from interface.components import *
-from logic import lore
+from interface.graphs import *
+from logic.utils import *
 
 
-class BaseSheet(object):
-    def __init__(self, parent):
-        frame = Frame(parent)
-        general = Labelframe(frame, text="General Information")
+class CoreSheet(Frame):
+    def __init__(self, parent, **kw):
+        super().__init__(parent, **kw)
 
-        player = LabeledEntry(general)
-        player.label.configure(text="Player:")
-        name = LabeledEntry(general)
-        name.label.configure(text="Name:")
-        concept = LabeledEntry(general)
-        concept.label.configure(text="Concept:")
-        self.genus = LabeledDropMenu(general)
-        self.genus.label.configure(text="Genus:")
-        self.genus.combo.configure(values=lore.genii)
-        self.genus.combo.bind("<<ComboboxSelected>>", self.update_species)
-        self.species = LabeledDropMenu(general)
-        self.species.label.configure(text="Species:")
+        sheet = read_json_file('data/template.json')
+        general = sheet['General']
+        attributes = sheet['Attributes']
+        secondary = sheet['Secondary']
+        skills = sheet['Skills']
+        attunement = sheet['Attunement']
 
-        general.pack()
-        frame.pack()
+        # graph1 = RadarGraph(self, attributes)
+        # graph1.place_canvas([1, 0, 1, 1])
+        graph2 = RadarGraph(self, attunement)
+        graph2.place_canvas([0, 1, 1, 1])
 
-    def update_species(self):
-        if self.genus.combo.current() == -1:
-            self.species.combo.configure(values=lore.species)
-        else:
-            self.species.combo.configure(values=lore.races['Species'][self.genus.combo.current()])
+        attuned = Frame(self)
+
+        death = ImageLabel(attuned, "images/death.png")
+        death.label.configure(text=attunement['Death'])
+        death.frame.grid(row=0, column=0, pady=1)
+        matter = ImageLabel(attuned, "images/matter.png")
+        matter.label.configure(text=attunement['Matter'])
+        matter.frame.grid(row=1, column=0, pady=1)
+        ether = ImageLabel(attuned, "images/ether.png")
+        ether.label.configure(text=attunement['Ether'])
+        ether.frame.grid(row=2, column=0, pady=1)
+        energy = ImageLabel(attuned, "images/energy.png")
+        energy.label.configure(text=attunement['Energy'])
+        energy.frame.grid(row=3, column=0, pady=1)
+        life = ImageLabel(attuned, "images/life.png")
+        life.label.configure(text=attunement['Life'])
+        life.frame.grid(row=4, column=0, pady=1)
+
+        attuned.grid(row=0, column=0)

@@ -3,7 +3,7 @@ Author: Stergios Mekras
 Email: stergios.mekras@gmail.com
 """
 
-from ttkthemes import themed_tk as tk
+from ttkthemes import themed_tk as ttk
 
 from interface.pages import *
 
@@ -11,19 +11,23 @@ from interface.pages import *
 class Nexus(object):
     def __init__(self):
         notebook = Notebook()
-        f1 = BaseSheet(notebook)
-        f2 = Frame(notebook)
-        f3 = Frame(notebook)
-        f4 = Frame(notebook)
-        notebook.add(f1, text="Base Sheet")
-        notebook.add(f2, text="Advanced Sheet")
-        notebook.add(f3, text="Creation Guidelines")
-        notebook.add(f4, text="Setting Information")
+        page_1 = Frame(notebook)
+        page_2 = Frame(notebook)
+        page_3 = Frame(notebook)
+        page_4 = Frame(notebook)
+
+        notebook.add(page_1, text="Base Sheet")
+        notebook.add(page_2, text="Advanced Sheet")
+        notebook.add(page_3, text="Creation Guidelines")
+        notebook.add(page_4, text="Setting Information")
+
+        sheet = CoreSheet(page_1, padding=10)
+        sheet.grid(row=0, column=0, columnspan=2)
 
         notebook.pack()
 
 
-root = tk.ThemedTk()
+root = ttk.ThemedTk()
 root.title("Nexus - Sheet Builder")
 root.resizable(False, False)
 """
