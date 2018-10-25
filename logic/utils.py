@@ -1,3 +1,8 @@
+"""
+Author: Stergios Mekras
+Email: stergios.mekras@gmail.com
+"""
+
 import json
 
 

@@ -3,6 +3,7 @@ Author: Stergios Mekras
 Email: stergios.mekras@gmail.com
 """
 
+import random
 from tkinter import *
 from tkinter.filedialog import askopenfilename, asksaveasfilename
 
@@ -25,12 +26,19 @@ class Nexus(object):
         file.add_command(label="New", command=self.create_sheet)
         file.add_command(label="Load", command=self.load_sheet)
         file.add_command(label="Save", command=self.save_sheet)
+        file.add_separator()
+        file.add_command(label="Exit", command=self.client_exit)
 
-        edit = Menu(menu, tearoff=0)
-        edit.add_command(label="Exit", command=self.client_exit)
+        tools = Menu(menu, tearoff=0)
+        tools.add_command(label="Image Gallery", command=self.client_exit)
+        tools.add_command(label="Roll Dice", command=self.dice_roller)
+        
+        info = Menu(menu, tearoff=0)
+        info.add_command(label="About", command=self.client_exit)
 
-        menu.add_cascade(label="Sheet", menu=file)
-        menu.add_cascade(label="Editor", menu=edit)
+        menu.add_cascade(label="File", menu=file)
+        menu.add_cascade(label="Tools", menu=tools)
+        menu.add_cascade(label="Help", menu=info)
 
         notebook = Notebook()
         self.page_1 = Frame(notebook)
@@ -71,6 +79,17 @@ class Nexus(object):
     def populate_sheet(self):
         self.sheet = CoreSheet(self.page_1, self.source, padding=10)
         self.sheet.pack(fill=BOTH, expand=1)
+
+    @staticmethod
+    def dice_roller():
+        base = 1
+        sides = 5
+        dice = 8
+        results = []
+        for i in range(dice):
+            x = random.randint(base, sides)
+            results.append(x)
+        print(results)
 
     @staticmethod
     def client_exit():

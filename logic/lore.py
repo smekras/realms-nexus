@@ -1,3 +1,8 @@
+"""
+Author: Stergios Mekras
+Email: stergios.mekras@gmail.com
+"""
+
 from logic import utils
 
 lists = utils.read_json_file('data/lists.json')
