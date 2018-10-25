@@ -5,14 +5,12 @@ Email: stergios.mekras@gmail.com
 
 from interface.components import *
 from interface.graphs import *
-from logic.utils import *
 
 
 class CoreSheet(Frame):
-    def __init__(self, parent, **kw):
+    def __init__(self, parent, source, **kw):
         super().__init__(parent, **kw)
-
-        sheet = read_json_file('data/template.json')
+        sheet = source
         general = sheet['General']
         attributes = sheet['Attributes']
         secondary = sheet['Secondary']

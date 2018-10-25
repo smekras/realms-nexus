@@ -36,7 +36,6 @@ class RadarGraph(object):
         ax.set_facecolor('#F6F4F2')
         ax.set_yticklabels([])
         ax.set_theta_zero_location('E', offset=90)
-        # ax.spines['polar'].set_visible(False)
         ax.tick_params(labelsize=0, pad=-17)
         if len(colors) > 3:
             for i in range(number):
