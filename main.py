@@ -3,7 +3,6 @@ Author: Stergios Mekras
 Email: stergios.mekras@gmail.com
 """
 
-import random
 from tkinter import *
 from tkinter.filedialog import askopenfilename, asksaveasfilename
 
@@ -11,6 +10,7 @@ from ttkthemes import themed_tk as ttk
 
 from interface.pages import *
 from logic.utils import *
+from tools.roller import *
 
 
 class Nexus(object):
@@ -80,26 +80,12 @@ class Nexus(object):
         self.sheet = CoreSheet(self.page_1, self.source, padding=10)
         self.sheet.pack(fill=BOTH, expand=1)
 
-    # TODO: Make dice roller a class
     @staticmethod
     def dice_roller():
-        sides = 10
-        dice = 8
-        threshold = 7
-        reroll = 10
-        results = []
-
-        random.seed()
-        for i in range(dice):
-            x = random.randrange(1, sides + 1)
-            results.append(x)
-
-        for i in range(len(results)):
-            if results[i] >= reroll:
-                x = random.randrange(1, sides + 1)
-                results.append(x)
-
-        successes = len([i for i in results if i >= threshold])
+        d_roller = DiceRoller(dice=8)
+        d_roller.roll_dice()
+        d_roller.roll_again()
+        d_roller.get_successes()
 
     @staticmethod
     def client_exit():
