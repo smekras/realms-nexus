@@ -80,16 +80,26 @@ class Nexus(object):
         self.sheet = CoreSheet(self.page_1, self.source, padding=10)
         self.sheet.pack(fill=BOTH, expand=1)
 
+    # TODO: Make dice roller a class
     @staticmethod
     def dice_roller():
-        base = 1
-        sides = 5
+        sides = 10
         dice = 8
+        threshold = 7
+        reroll = 10
         results = []
+
+        random.seed()
         for i in range(dice):
-            x = random.randint(base, sides)
+            x = random.randrange(1, sides + 1)
             results.append(x)
-        print(results)
+
+        for i in range(len(results)):
+            if results[i] >= reroll:
+                x = random.randrange(1, sides + 1)
+                results.append(x)
+
+        successes = len([i for i in results if i >= threshold])
 
     @staticmethod
     def client_exit():
