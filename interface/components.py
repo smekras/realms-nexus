@@ -25,13 +25,12 @@ class ImageLabel(object):
 
 class LabeledEntry(object):
     def __init__(self, parent):
-        frame = Frame(parent)
-        self.label = Label(frame, width=8, padding=1)
-        self.entry = Entry(frame, width=16)
+        self.frame = Frame(parent)
+        self.label = Label(self.frame, width=8, padding=1)
+        self.entry = Entry(self.frame, width=16)
 
         self.label.grid(row=0, column=0)
         self.entry.grid(row=0, column=1)
-        frame.pack()
 
 
 class LabeledDropMenu(object):

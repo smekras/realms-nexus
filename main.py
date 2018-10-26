@@ -80,12 +80,9 @@ class Nexus(object):
         self.sheet = CoreSheet(self.page_1, self.source, padding=10)
         self.sheet.pack(fill=BOTH, expand=1)
 
-    @staticmethod
-    def dice_roller():
-        d_roller = DiceRoller(dice=8)
-        d_roller.roll_dice()
-        d_roller.roll_again()
-        d_roller.get_successes()
+    def dice_roller(self):
+        anchor = Toplevel(self.master)
+        roller_app = RollerApp(anchor)
 
     @staticmethod
     def client_exit():
