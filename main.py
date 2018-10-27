@@ -30,8 +30,8 @@ class Nexus(object):
         file.add_command(label="Exit", command=self.client_exit)
 
         tools = Menu(menu, tearoff=0)
+        tools.add_command(label="Dice Roller", command=self.dice_roller)
         tools.add_command(label="Image Gallery", command=self.client_exit)
-        tools.add_command(label="Roll Dice", command=self.dice_roller)
         
         info = Menu(menu, tearoff=0)
         info.add_command(label="About", command=self.client_exit)
