@@ -98,6 +98,8 @@ List of available themes from root.get_themes()
 'plastik', 'aquativo', 'keramik', 'clam', 'winxpblue', 'clearlooks', 'kroc', 'blue', 'alt']
 """
 root.set_theme("ubuntu")
+icon = PhotoImage(file=r'images/nexus.png')
+root.tk.call('wm', 'iconphoto', root._w, icon)
 
 app = Nexus(root)
 

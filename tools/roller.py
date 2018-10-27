@@ -65,7 +65,9 @@ class DiceRoller(object):
 class RollerApp(Frame):
     def __init__(self, master, **kw):
         super().__init__(master, **kw)
+        icon = tk.PhotoImage(file=r'images/dice.png')
         self.master = master
+        self.master.tk.call('wm', 'iconphoto', self.master._w, icon)
         self.master.title("Nexus - Dice Roller")
         self.master.resizable(False, False)
 
