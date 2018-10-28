@@ -7,32 +7,36 @@ from interface.components import *
 from logic import lore
 
 
-class GeneralPanel(object):
-    def __init__(self):
-        self.general = Labelframe(self, text="General Information", padding=10)
+class GeneralPanel(Frame):
+    def __init__(self, master, **kw):
+        super().__init__(master, **kw)
+        self.frame = Labelframe(master, text="General Information", padding=10)
 
-        self.player = LabeledEntry(self.general)
+        self.player = LabeledEntry(self.frame)
         self.player.label.configure(text="Player")
-        self.name = LabeledEntry(self.general)
+        self.player.frame.pack()
+        self.name = LabeledEntry(self.frame)
         self.name.label.configure(text="Name")
-        self.concept = LabeledEntry(self.general)
+        self.name.frame.pack()
+        self.concept = LabeledEntry(self.frame)
         self.concept.label.configure(text="Concept")
-        self.genus = LabeledDropMenu(self.general)
+        self.concept.frame.pack()
+        self.genus = LabeledDropMenu(self.frame)
         self.genus.label.configure(text="Genus")
         self.genus.combo.configure(values=lore.genii)
         self.genus.combo.bind("<<ComboboxSelected>>", self.update_species)
-        self.species = LabeledDropMenu(self.general)
+        self.species = LabeledDropMenu(self.frame)
         self.species.label.configure(text="Species")
         self.species.combo.bind("<<ComboboxSelected>>")
-        self.aspect = LabeledDropMenu(self.general)
+        self.aspect = LabeledDropMenu(self.frame)
         self.aspect.label.configure(text="Aspect")
         self.aspect.combo.configure(values=lore.aspects)
         self.aspect.combo.bind("<<ComboboxSelected>>")
-        self.bearing = LabeledDropMenu(self.general)
+        self.bearing = LabeledDropMenu(self.frame)
         self.bearing.label.configure(text="Bearing")
         self.bearing.combo.configure(values=lore.bearings)
         self.bearing.combo.bind("<<ComboboxSelected>>")
-        self.persona = LabeledDropMenu(self.general)
+        self.persona = LabeledDropMenu(self.frame)
         self.persona.label.configure(text="Persona")
         self.persona.combo.configure(values=lore.personae)
         self.persona.combo.bind("<<ComboboxSelected>>")
@@ -41,7 +45,10 @@ class GeneralPanel(object):
         if self.genus.combo.current() == -1:
             self.species.combo.configure(values=lore.species)
         else:
-            self.species.combo.configure(values=lore.races['Species'][self.genus.combo.current()])
+            species = []
+            for k, v in lore.races['Species'][self.genus.var.get()].items():
+                species.append(k)
+            self.species.combo.configure(values=species)
 
 
 class AttributesPanel(object):

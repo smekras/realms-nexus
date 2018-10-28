@@ -104,11 +104,11 @@ class RollerApp(Frame):
         button = Button(self.frame, text="Roll", command=self.roll_dice)
 
         self.successes = LabeledEntry(self.frame)
-        self.successes.label.configure(text="Successes:", width=16)
+        self.successes.label.configure(text="Successes:", width=16, foreground='green')
         self.successes.entry.configure(state=tk.DISABLED, width=3)
 
         self.botches = LabeledEntry(self.frame)
-        self.botches.label.configure(text="Botches:", width=16)
+        self.botches.label.configure(text="Botches:", width=16, foreground='red')
         self.botches.entry.configure(state=tk.DISABLED, width=3)
 
         results_label = Label(self.frame, text="Results:")

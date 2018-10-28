@@ -35,13 +35,14 @@ class LabeledEntry(object):
 
 class LabeledDropMenu(object):
     def __init__(self, parent):
-        frame = Frame(parent)
-        self.label = Label(frame, width=8, padding=1)
-        self.combo = Combobox(frame, width=14, state="readonly")
+        self.frame = Frame(parent)
+        self.var = tk.StringVar()
+        self.label = Label(self.frame, width=8, padding=1)
+        self.combo = Combobox(self.frame, textvariable=self.var, width=14, state="readonly")
 
         self.label.grid(row=0, column=0)
         self.combo.grid(row=0, column=1)
-        frame.pack()
+        self.frame.pack()
 
 
 class LabeledAttribute(object):
