@@ -13,30 +13,33 @@ class Entity(object):
 class Player(Entity):
     def __init__(self):
         super().__init__()
-        self.email = ""
+        self.email = []
         self.characters = []
 
 
 class Person(Entity):
-    def __init__(self):
+    def __init__(self, source):
         super().__init__()
-        self.attributes = []
-        self.skills = []
-        self.qualities = []
-        self.powers = []
+        self.image = source['General']['Images'][0]
+        self.name = source['General']['Name']
+        self.attributes = source['Attributes']
+        self.skills = source['Skills']
+        self.qualities = source['Qualities']
+        self.powers = source['Attunement']
+        self.notes = ""
 
 
 class Character(Person):
-    def __init__(self):
-        super().__init__()
-        self.player = ""
-        self.concept = ""
-        self.genus = []
-        self.species = []
-        self.aspect = []
-        self.bearing = []
-        self.persona = []
-        self.quirk = ""
+    def __init__(self, source):
+        super().__init__(source)
+        self.player = source['General']['Player']
+        self.concept = source['General']['Concept']
+        self.genus = source['General']['Genus']
+        self.species = source['General']['Species']
+        self.aspect = source['General']['Aspect']
+        self.bearing = source['General']['Bearing']
+        self.persona = source['General']['Persona']
+        self.quirk = source['Personality']['Quirk']
         self.forms = []
         self.augmentations = []
         self.identities = []

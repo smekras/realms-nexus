@@ -1,6 +1,9 @@
 {
   "General": {
     "Player": "Player Handle",
+    "Images": [
+      "images/portrait.png"
+    ],
     "Name": "Character Name",
     "Concept": "Character Concept",
     "Genus": [
@@ -256,7 +259,7 @@
     ]
   },
   "Personality": {
-    "Quirk": " "
+    "Quirk": "Something peculiar about the character."
   },
   "Qualities": {},
   "Fighting Styles": {},

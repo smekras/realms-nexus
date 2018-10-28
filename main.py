@@ -9,6 +9,7 @@ from tkinter.filedialog import askopenfilename, asksaveasfilename
 from ttkthemes import themed_tk as ttk
 
 from interface.pages import *
+from logic.entities import *
 from logic.utils import *
 from tools.roller import *
 
@@ -19,6 +20,7 @@ class Nexus(object):
         menu = Menu()
         self.master.config(menu=menu)
         self.source = read_json_file('data/template.json')
+        self.character = Character(self.source)
         self.temp = {}
         self.sheet = None
 
@@ -51,7 +53,7 @@ class Nexus(object):
         notebook.add(page_3, text="Creation Guidelines")
         notebook.add(page_4, text="Setting Information")
 
-        self.sheet = CoreSheet(self.page_1, self.source, padding=10)
+        self.sheet = CoreSheet(self.page_1, self.character, padding=10)
         self.populate_sheet()
 
         notebook.pack()
@@ -77,7 +79,7 @@ class Nexus(object):
             create_json_file(f, self.temp)
 
     def populate_sheet(self):
-        self.sheet = CoreSheet(self.page_1, self.source, padding=10)
+        self.sheet = CoreSheet(self.page_1, self.character, padding=10)
         self.sheet.pack(fill=BOTH, expand=1)
 
     def dice_roller(self):
