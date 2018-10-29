@@ -25,21 +25,26 @@ class GeneralPanel(Frame):
         self.genus.label.configure(text="Genus")
         self.genus.combo.configure(values=lore.genii)
         self.genus.combo.bind("<<ComboboxSelected>>", self.update_species)
+        self.genus.frame.pack()
         self.species = LabeledDropMenu(self.frame)
         self.species.label.configure(text="Species")
         self.species.combo.bind("<<ComboboxSelected>>")
+        self.species.frame.pack()
         self.aspect = LabeledDropMenu(self.frame)
         self.aspect.label.configure(text="Aspect")
         self.aspect.combo.configure(values=lore.aspects)
         self.aspect.combo.bind("<<ComboboxSelected>>")
+        self.aspect.frame.pack()
         self.bearing = LabeledDropMenu(self.frame)
         self.bearing.label.configure(text="Bearing")
         self.bearing.combo.configure(values=lore.bearings)
         self.bearing.combo.bind("<<ComboboxSelected>>")
+        self.bearing.frame.pack()
         self.persona = LabeledDropMenu(self.frame)
         self.persona.label.configure(text="Persona")
         self.persona.combo.configure(values=lore.personae)
         self.persona.combo.bind("<<ComboboxSelected>>")
+        self.persona.frame.pack()
 
     def update_species(self, event):
         if self.genus.combo.current() == -1:
@@ -52,25 +57,26 @@ class GeneralPanel(Frame):
 
 
 class AttributesPanel(object):
-    def __init__(self):
-        self.attributes = Labelframe(self, text="Core Attributes", padding=10)
+    def __init__(self, master):
+        self.frame = Labelframe(master, text="Core Attributes", padding=10)
 
-        self.agility = LabeledAttribute(self.attributes)
-        self.agility.label.configure(text="Agility")
-        self.awareness = LabeledAttribute(self.attributes)
-        self.awareness.label.configure(text="Awareness")
-        self.charisma = LabeledAttribute(self.attributes)
-        self.charisma.label.configure(text="Charisma")
-        self.intellect = LabeledAttribute(self.attributes)
-        self.intellect.label.configure(text="Intellect")
-        self.resilience = LabeledAttribute(self.attributes)
-        self.resilience.label.configure(text="Resilience")
-        self.strength = LabeledAttribute(self.attributes)
-        self.strength.label.configure(text="Strength")
-        self.vitality = LabeledAttribute(self.attributes)
-        self.vitality.label.configure(text="Vitality")
-        self.wits = LabeledAttribute(self.attributes)
-        self.wits.label.configure(text="Wits")
+        self.agility = LabeledAttribute(self.frame)
+        self.awareness = LabeledAttribute(self.frame)
+        self.charisma = LabeledAttribute(self.frame)
+        self.intellect = LabeledAttribute(self.frame)
+        self.resilience = LabeledAttribute(self.frame)
+        self.strength = LabeledAttribute(self.frame)
+        self.vitality = LabeledAttribute(self.frame)
+        self.wits = LabeledAttribute(self.frame)
+
+        attribute_list = [self.agility, self.awareness, self.charisma, self.intellect, self.resilience, self.strength,
+                          self.vitality, self.wits]
+        # TODO: Get attributes from sheet
+        label_list = ["Agility", "Awareness", "Charisma", "Intellect", "Resilience", "Strength", "Vitality", "Wits"]
+
+        for _ in range(len(attribute_list)):
+            attribute_list[_].label.configure(text=label_list[_])
+            attribute_list[_].frame.pack()
 
 
 class SecondaryPanel(object):
