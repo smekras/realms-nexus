@@ -60,4 +60,4 @@ class CoreSheet(Frame):
         graph2.place_canvas([0, 2, 1, 1])
 
         gen_switch = SwitchPanel(general)
-        gen_switch.frame.grid(row=4, column=0)
+        gen_switch.frame.grid(row=0, column=1, sticky='NE')
