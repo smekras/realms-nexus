@@ -85,7 +85,8 @@ class SwitchPanel(object):
     def __init__(self, master):
         self.frame = Frame(master)
         pic = Image.open('images/edit.png')
-        pic = pic.resize((32, 32), Image.ANTIALIAS)
-        self.button = Button(image=pic)
-        self.button.image = pic
+        pic = pic.resize((24, 24), Image.ANTIALIAS)
+        image = ImageTk.PhotoImage(pic)
+        self.button = tk.Button(self.frame, image=image, bg='#F6F4F2')
+        self.button.image = image
         self.button.pack()

@@ -59,4 +59,5 @@ class CoreSheet(Frame):
         graph2 = RadarGraph(self, attunement)
         graph2.place_canvas([0, 2, 1, 1])
 
-        gen_switch = SwitchPanel(self)
+        gen_switch = SwitchPanel(general)
+        gen_switch.frame.grid(row=4, column=0)
